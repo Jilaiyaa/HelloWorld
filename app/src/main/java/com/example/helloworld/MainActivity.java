@@ -9,6 +9,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private Integer NumberOne = 0;
+    private Integer Operator = 0; // 1 für +, 2 für -, 3für * und 4 für /
+    private Integer Result = 0;
+    private Integer NumberTwo = 0;
+
+
     private Button bOne;
 
     private Button bTwo;
@@ -115,6 +121,114 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+        Button clicked = v;
+
+        if(clicked.getId() == this.bZero.getId())[
+            NumberTwo = NumberTwo*10 + 0;
+            this.tvNumberTwo.setText(NumberTwo.toString());
+            ]
+
+        if(clicked.getId() == this.bOne.getId())[
+        NumberTwo = NumberTwo*10 + 1;
+        this.tvNumberTwo.setText(NumberTwo.toString());
+            ]
+
+        if(clicked.getId() == this.bTwo.getId())[
+        NumberTwo = NumberTwo*10 + 2;
+        this.tvNumberTwo.setText(NumberTwo.toString());
+            ]
+
+        if(clicked.getId() == this.bThree.getId())[
+        NumberTwo = NumberTwo*10 + 3;
+        this.tvNumberTwo.setText(NumberTwo.toString());
+            ]
+
+        if(clicked.getId() == this.bFour.getId())[
+        NumberTwo = NumberTwo*10 + 4;
+        this.tvNumberTwo.setText(NumberTwo.toString());
+            ]
+
+        if(clicked.getId() == this.bFive.getId())[
+        NumberTwo = NumberTwo*10 + 5;
+        this.tvNumberTwo.setText(NumberTwo.toString());
+            ]
+
+        if(clicked.getId() == this.bSix.getId())[
+        NumberTwo = NumberTwo*10 + 6;
+        this.tvNumberTwo.setText(NumberTwo.toString());
+            ]
+
+        if(clicked.getId() == this.bSeven.getId())[
+        NumberTwo = NumberTwo*10 + 7;
+        this.tvNumberTwo.setText(NumberTwo.toString());
+            ]
+
+        if(clicked.getId() == this.bEight.getId())[
+        NumberTwo = NumberTwo*10 + 8;
+        this.tvNumberTwo.setText(NumberTwo.toString());
+            ]
+
+        if(clicked.getId() == this.bNine.getId())[
+        NumberTwo = NumberTwo*10 + 9;
+        this.tvNumberTwo.setText(NumberTwo.toString());
+            ]
+
+        if(clicked.getId() == this.bPlus.getId())[
+                NumberOne = NumberTwo;
+                NumberTwo = 0;
+                tvNumberOne.setText(NumberOne.toString());
+                tvNumberOne.setVisibility(View.VISIBLE);
+
+                tvNumberTwo.setText(NumberTwo.toString());
+
+                Operator = 1;
+                tvOperator.setVisibility(View.VISIBLE);
+                tvOperator.setText("+");
+            ]
+
+        if(clicked.getId() == this.bMinus.getId())[
+        NumberOne = NumberTwo;
+        NumberTwo = 0;
+        tvNumberOne.setText(NumberOne.toString());
+        tvNumberOne.setVisibility(View.VISIBLE);
+
+        tvNumberTwo.setText(NumberTwo.toString());
+
+        Operator = 2;
+        tvOperator.setVisibility(View.VISIBLE);
+        tvOperator.setText("-");
+            ]
+
+        if(clicked.getId() == this.bMal.getId())[
+        NumberOne = NumberTwo;
+        NumberTwo = 0;
+        tvNumberOne.setText(NumberOne.toString());
+        tvNumberOne.setVisibility(View.VISIBLE);
+
+        tvNumberTwo.setText(NumberTwo.toString());
+
+        Operator = 3;
+        tvOperator.setVisibility(View.VISIBLE);
+        tvOperator.setText("*");
+            ]
+
+        if(clicked.getId() == this.bDivide.getId())[
+        NumberOne = NumberTwo;
+        NumberTwo = 0;
+        tvNumberOne.setText(NumberOne.toString());
+        tvNumberOne.setVisibility(View.VISIBLE);
+
+        tvNumberTwo.setText(NumberTwo.toString());
+
+        Operator = 4;
+        tvOperator.setVisibility(View.VISIBLE);
+        tvOperator.setText("/");
+            ]
+
+        
+        }
+
+
 
     }
 }
